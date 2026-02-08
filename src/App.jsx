@@ -149,7 +149,7 @@ export default function Portfolio() {
           <motion.div initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }} className="relative flex justify-center order-first md:order-last">
             <div className="w-64 h-64 md:w-[450px] md:h-[450px] rounded-3xl bg-gradient-to-br from-orange-500 to-red-600 p-1 rotate-3">
               <div className="w-full h-full bg-[#111] rounded-3xl overflow-hidden -rotate-3 hover:rotate-0 transition duration-500">
-                <img src="https://via.placeholder.com/600" alt="Profile" className="w-full h-full object-cover grayscale hover:grayscale-0 transition duration-500" />
+                <img src="/portfolio.jpg" alt="Profile" className="w-full h-full object-cover grayscale hover:grayscale-0 transition duration-500" />
               </div>
             </div>
           </motion.div>
