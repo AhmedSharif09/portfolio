@@ -26,6 +26,22 @@ export default function Portfolio() {
     }
   ];
 
+  // Updated Services Data with your specific lines
+  const services = [
+    {
+      title: "UI/UX Design",
+      description: "Creating intuitive and visually stunning user interfaces that provide seamless digital experiences across all devices."
+    },
+    {
+      title: "React Development",
+      description: "Building dynamic, high-performance web applications using modern React patterns and efficient state management."
+    },
+    {
+      title: "Responsive Layouts",
+      description: "Ensuring your website looks perfect on every screen size, from mobile phones to large desktop monitors."
+    }
+  ];
+
   const skillCategories = [
     { title: "Essentials", skills: ["HTML5", "CSS3", "JavaScript", "Git"] },
     { title: "Frameworks & Libs", skills: ["React.js", "Redux", "Framer Motion", "Vite"] },
@@ -143,13 +159,13 @@ export default function Portfolio() {
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl md:text-5xl font-bold mb-16 text-center uppercase tracking-widest">Services</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {["UI/UX Design", "React Development", "Responsive Layouts"].map((service, i) => (
+            {services.map((service, i) => (
               <div key={i} className="bg-[#1c1c1c] p-10 rounded-3xl border border-gray-800 hover:border-orange-500/50 transition-all group">
                 <div className="w-12 h-12 bg-orange-500/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-orange-500 transition">
                   <ExternalLink className="text-orange-500 group-hover:text-white" size={20} />
                 </div>
-                <h3 className="text-2xl font-bold mb-4">{service}</h3>
-                <p className="text-gray-400 leading-relaxed">High-end digital solutions focused on performance and accessibility.</p>
+                <h3 className="text-2xl font-bold mb-4">{service.title}</h3>
+                <p className="text-gray-400 leading-relaxed">{service.description}</p>
               </div>
             ))}
           </div>
